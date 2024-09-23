@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2px" id="ok">
+        <tr id="ok1">
+        <th>Name</th>
+        <th>Email</th>
+    </tr>
+    
+    <tr>
+        <td>Gunn</td>
+        <td>gunn5@gmail.com</td>
+    </tr>
+    <tr>
+        <td>xyz</td>
+        <td>xyz5@gmail.com</td>
+    </tr>   
+    </table>
+    <br><br>
+    <h1>select background color</h1>
+    <input type="radio" name="c1" id="color1" onclick="chngcolr()">yellow
+    <input type="radio" name="c1" id="color2" onclick="chngcolr()">green
+    <input type="radio" name="c1" id="color3" onclick="chngcolr()">aqua
+    <h1>select background color for heading row</h1>
+    <input type="radio" name="c2" id="color4" onclick="chngcolr1()">yellow
+    <input type="radio" name="c2" id="color5" onclick="chngcolr1()">green
+    <input type="radio" name="c2" id="color6" onclick="chngcolr1()">cyan
+    <h1>select  color for table text</h1>
+    <input type="radio" name="c3" id="color7" onclick="chngcolr2()">yellow
+    <input type="radio" name="c3" id="color8" onclick="chngcolr2()">green
+    <input type="radio" name="c3" id="color9" onclick="chngcolr2()">cyan
+    <h1>apply shadow to the table: 
+        <input type="checkbox" id="color10" onclick="chngcolr3()" >
+    </h1>
+<script>   
+    function chngcolr(){
+    if(document.getElementById("color1").checked == true)
+    document.getElementById("ok").style.backgroundColor="yellow";
+    if(document.getElementById("color2").checked == true)
+    document.getElementById("ok").style.backgroundColor="green";
+    if(document.getElementById("color3").checked == true)
+    document.getElementById("ok").style.backgroundColor="aqua";
+    }
+
+    function chngcolr1(){
+    if(document.getElementById("color4").checked == true)
+    document.getElementById("ok1").style.backgroundColor="yellow";
+    if(document.getElementById("color5").checked == true)
+    document.getElementById("ok1").style.backgroundColor="green";
+    if(document.getElementById("color6").checked == true)
+    document.getElementById("ok1").style.backgroundColor="cyan";
+    }
+
+    function chngcolr2(){
+    if(document.getElementById("color7").checked == true)
+    document.getElementById("ok").style.color="yellow";
+    if(document.getElementById("color8").checked == true)
+    document.getElementById("ok").style.color="green";
+    if(document.getElementById("color9").checked == true)
+    document.getElementById("ok").style.color="cyan";
+    }
+    function chngcolr3(){
+    if(document.getElementById("color10").checked == true)
+     document.getElementById("ok").style.boxShadow="2px 2px 3px red";
+    if(document.getElementById("color10").checked == false)
+     document.getElementById("ok").style.boxShadow="none";
+    }
+</script>
+</html>

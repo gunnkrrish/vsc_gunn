@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to create a label and append it to the body
+function print(data) {
+    const label = document.createElement('label');
+    label.textContent = data;
+    document.body.appendChild(label);
+}
+
+// Function to create a <br> element for new lines
+function newLine() {
+    const lineBreak = document.createElement('br');
+    document.body.appendChild(lineBreak);
+}
+
+// Define the size of the board
+const board_size = 8; // Example size, can be any positive integer
+
+// Function to create a chessboard pattern
+function createChessboard(size) {
+    for (let row = 0; row < size; row++) {
+        let rowPattern = '';
+        for (let col = 0; col < size; col++) {
+            // Determine whether to place '*' or '#'
+            if ((row + col) % 2 === 0) {
+                rowPattern += '*';
+            } else {
+                rowPattern += '#';
+            }
+        }
+        // Print the row pattern and move to the next line
+        print(rowPattern);
+        newLine();
+    }
+}
+
+// Create the chessboard of size board_size
+createChessboard(board_size);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!-- javascript se value utha kr html m print krvana ho to use innerHTML
+ innertext se tag print ho rha h means as text read krke usko print krega pr innerhtml m vo tag apply krega -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Inner HTML</title>
+</head>
+
+<body>
+    <h1 id="myheading"> </h1>
+    <script>
+        let obj = document.getElementById("myheading");
+        obj.innerHTML = "<u>Hello World</u>";
+        obj.innerText = "<u>Hello World</u>";
+        // document.getElementById("myheading").innerHTML="Hello World";  [if we want to do it in one line]
+    </script>
+
+
+
+
+    <!-- QUESTION : check even or odd  -->
+<h1 id="check"> </h1>
+<script>
+let obj=document.getElementById("check");
+var i=parseInt(prompt("enter a num"));
+    if(i%2==0)
+    obj.innerHTML="even";
+    else                                                                                
+    obj.innerHTML="odd";
+</script>
+</body>
+
+</html>

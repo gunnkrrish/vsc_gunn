@@ -1,0 +1,32 @@
+<!-- js m array m diff datatypes ki values store kr skte h                                  typeof() concept pdhna h
+var myarray = [] ; //empty array
+var myarray = new Array(); 
+books.length : returns length of array
+join(' ') : method to display array elements like by default it comes comma so now it will come as space
+************************************INTERVIEW **************************************************
+var arr1 = new Array(2)    will create an array of length two and none of the elements are defined in it
+var arr2 = new Array(1,2)    will create an array of length two with elements 1 and 2 in it
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var books = new Array();
+        // books[0]="divine";
+        // books[2]="secret";
+        // console.log(books);       //returns['divine' , empty 'secret']
+        // console.log(books[1]); //returns undefined
+         var ok =["leadership",900,true,30];
+         for(var index=0;index<ok.length;index++){
+            console.log(ok[index]);
+         }
+         var ok1 =["leadership",900,true,30];
+         console.log(ok1.join(' '));
+    </script>
+</body>
+</html>

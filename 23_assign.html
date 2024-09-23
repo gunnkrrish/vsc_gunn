@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="shapes" style="width: 100px; height: 100px; border: 5px solid black; "></div>
+    
+    
+    <input type="radio" name="c1" id="color1" onclick="chng()">CIRCLE
+    <input type="radio" name="c1" id="color2" onclick="chng()">SQUARE
+    <input type="radio" name="c1" id="color3" onclick="chng()">RECTANGLE
+    <input type="radio" name="p1" id="color4" onclick="chng()">FILL YELLOW
+    <input type="radio" name="p1" id="color5" onclick="chng()">FILL NONE
+    <script>
+       function chng(){
+    if(document.getElementById("color1").checked == true)
+    document.getElementById("shapes").style.borderRadius= "100px" ;
+    if(document.getElementById("color2").checked == true)
+    document.getElementById("shapes").style.borderRadius="0";
+    if(document.getElementById("color3").checked == true)
+    document.getElementById("shapes").style.width="200px";
+    if(document.getElementById("color4").checked == true)
+    document.getElementById("shapes").style.backgroundColor="yellow";
+    if(document.getElementById("color5").checked == true)
+    document.getElementById("shapes").style.backgroundColor="white";
+    } 
+    </script>
+</body>
+</html>
+

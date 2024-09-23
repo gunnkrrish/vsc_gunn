@@ -1,0 +1,114 @@
+<!--keyframes rules tell that how many tym is there to get loaded (elements pr animations lgana)-->
+<!--keyframe selectors : percentage ,from and to-->
+<!--animation : animation name   time  infinte (foreover continue OR write 2 , 3) -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .square{
+            width: 200px;
+            height: 200px;
+            animation: mycolors 5s infinite;
+        }
+        @keyframes mycolors{
+            from{background-color: aqua;}
+            to{background-color: blue;}
+        }
+    </style>
+</head>
+<body>
+    <div class="square"></div>
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!-- EXAMPLE : 2 -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .square{
+            width: 20px;
+            height: 20px;
+            background: red;
+            position: relative;
+            animation: mycolors 5s infinite;
+        }
+        @keyframes mycolors{
+            0% {left: 0px; top: 0px;}
+            25% {left: 300px; top: 0px;}
+            50% {left: 300px; top: 200px;}
+            75% {left: 0px; top: 200px;}
+            100% {left: 0px; top: 0px;}
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="square"></div>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+<!--example 3-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .container{
+            width: 400px;
+            margin: auto;
+            border: 2px solid navy;
+        }
+        .square{
+            width: 20px;
+            height: 20px;
+            background: red;
+            position: relative;
+            animation: mymoves 5s 1;
+        }
+        @keyframes mymoves{
+            0% {left: 0px; top: 0px;}
+            25% {left: 50px; top: 0px;}
+            50% {left: 100px; top: 0px;}
+            75% {left: 250px; top: 0px;}
+            100% {left: 380px; top: 0px;}
+
+        }
+        .square{
+            width: 20px;
+            height: 20px;                           /* jb animation khtm hojati h to hme vo display hi ni krta to display krne ke liyee ye vpis se lgyaa */
+            background: red;
+            position: relative;
+            left: 380px;
+            top: 0px;
+        }
+        .load{
+            width: 400px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="square"></div>
+    </div>
+    <div class="load">loading......</div>
+</body>
+</html>

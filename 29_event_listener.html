@@ -1,0 +1,54 @@
+<!-- its wait for an event to occur works at backend
+eg: user clocking the mouse or pressing a key 
+we use this it is becaz more feaseble
+addEventListenenr() takes two parameters event name and callback function
+it is case sensitive
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button id="btn1">Click here</button>
+    <script>
+        function myfunc(){
+            alert("welcome user !")
+        }
+        document.getElementById("btn1").addEventListener("click",myfunc) -->
+
+
+
+
+        <!-- <button id="btn1">Click here</button>
+    <script>
+        function myfunc(){
+            alert("welcome user !")
+        }
+        document.getElementById("btn1").addEventListener("mouseover",myfunc)
+    </script> -->
+
+
+
+<!-- <button id="btn1">Click here</button>
+<script>
+    function myfunc(){
+        alert("welcome user !")
+    }
+    document.getElementById("btn1").addEventListener("dblclick",myfunc)
+</script> -->
+
+<button id="btn1">Click here</button>
+    <script>
+        function myfunc(){
+            var d = new Date();
+            document.write(d.getDate() +" "+ d.toLocaleString('default',{month: 'long'})+" ," +d.getFullYear())
+
+        }
+        document.getElementById("btn1").addEventListener("click",myfunc)
+        
+        </script>
+</body>
+</html>

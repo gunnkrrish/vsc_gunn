@@ -1,0 +1,25 @@
+
+<!-- info json ki isne js m convert krdi
+ jSON data can't be transmitted in the browser in iys raw key:value pair form
+JSON.stringify() method returns a json string that is exactly the same as a js object that can be easily displayed in a browser -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="jsondata">
+    </h3>
+    <script>
+        marks={
+            "maths":97,
+            "chemistry":78,
+            "language":92
+        }
+        document.getElementById("jsondata").innerHTML=JSON.stringify(marks);
+        //stringfy se hum browser se display krva payega without iske object object arha h
+    </script>
+</body>
+</html>

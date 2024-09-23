@@ -1,0 +1,30 @@
+<!-- jb info text ki form m chaiye ho -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <form name="loginform" action="menu.html" onsubmit="return validate()">
+        username: <input type="text" name="uname"><br>
+        password: <input type="password" name="pwd"><br>
+        <input type="submit" value="SUBMIT">
+
+    </form>
+    <script>
+        localStorage.user= JSON.stringify({name : "ram",password: "12345"});
+        let user = JSON.parse(localStorage.user);
+        function validate(){
+            let u= document.loginform.uname.value;
+            let p= document.loginform.pwd.value;
+            if(u== user.name && p==user.password)
+            return true;
+            else
+            return false;
+//how to see this at back >> go to inspect>>console vali line m application pe jao>> fr local storage m mil jega
+        }
+    </script>
+ </body>
+ </html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let add = (x,y) => x+y;
+        console.log(add(10,20));
+
+        //type of add is function
+
+        //use arrow to sort
+        // let numbers =[4,2,6,12,3];
+        // numbers.sort((a,b) => b-a);
+        // console.log(numbers);
+
+        //use arrow to find length
+        // let names=['krishna','ram','maruti'];
+        // lengths=names.map(name=>name.length);
+        // console.log(lengths);
+
+        //arrow fun to calc avg
+        // let names=['krishna','ram','maruti'];
+        // lengths=names.map(name=>name.length);
+        // console.log(lengths);
+
+        //to calculate average
+        // const arrayavg=(arr)=>{
+        //     let total=0;
+        //     for(let number of arr){
+        //         total+=number;
+        //     }
+        //     return total/arr.length;
+        // }
+        // let numbers=[1,2,3,4,5,6,7];
+        // console.log(`average is:${arrayavg(numbers)}`);
+
+
+        //display table
+        const displayTable = (num) => {
+            for(let i = 1; i<= 10; i++) {
+                console.log(`${num} x ${i} = ${num * i}`);
+            }
+        };
+        
+        
+        let number = prompt("Enter a number to display its multiplication table:");
+        displayTable(Number(number));
+        
+    </script>
+
+</body>
+</html>

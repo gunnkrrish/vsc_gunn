@@ -1,0 +1,85 @@
+<!-- promise in js is like a container for a future value . it is asynchronous
+synchronous way : means ki line wise code execute hoga 
+asynchronous : means ki promise hogya ki vo chlta rhega or hum apna kaam krte rehngee like clock chl rhi h or niche or bhi kuch work kr rehee h
+prmise has three states: pending , fulfilled/resolved , rejected 
+a prmise state start by pending state , if the operation is succesfull is it fulfilled,if error occurs then rejected.
+prmise syntax: 
+let prom= new Promise(function(resolve,reject){
+    //do;
+});
+it is callback function
+Promise constructor takes two function as argu - resolve() and reject() -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let data= true;
+        let mypromise = new Promise(function(resolve,reject){
+            if(data){
+                resolve("data loaded succesfully");
+            }
+            else{
+                reject("data not loaded... some error occured: ");
+            }
+        });
+        console.log(mypromise);
+
+</script> -->
+<script>
+        //then method is called when the promise is fulfilled it takes a function as an arguament which will be executed when the primise is fulfilled 
+        //catch method is called when the promise is rejected it takes a function as an arguament which will be executed when the primise has error
+    //we need then becaz in this we can run more than 1 clause but there can be only one catch
+        
+        // let promise=new Promise(function(resolve,reject){
+        //     const x="bull";
+        //     const y="bull";
+        //     if(x===y){
+        //         resolve();
+        //     }
+        //     else{
+        //         reject();
+        //     }
+        // });
+        // promise
+        // .then(function(){
+        //     console.log('success');
+        // }).catch(function(){
+        //     console.log('error');
+        // })
+    
+
+
+        // successMessage: it is a keyword
+        const data= true;
+        let mypromise=new Promise(function(resolve,reject){
+            
+            if(data){
+                resolve('fulfilled!');
+            }
+            else{
+                reject('rejected!');
+            }
+        });
+        mypromise
+        .then(function(successMessage){
+            console.log(successMessage);
+        })
+        .then(function(){
+            console.log("success2");
+        })
+        .catch(function(errorMessage){
+            console.log(errorMessage);
+        })
+        .finally(function(){
+            console.log("finally done");
+        });
+    </script> 
+    <!-- .finally clause : made after catch  , it runs everytime-->
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!-- we can pass a function as an argument to another function
+function that is passed is called callback function -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greet(name,callback){
+            console.log('hello'+' '+name);
+            callback();
+        }
+        function callme(){
+            console.log('it is callback fun');
+        }
+        greet('ram',callme);
+    </script>
+</body>
+</html>

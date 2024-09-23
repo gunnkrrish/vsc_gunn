@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var rows=parseInt(prompt("enter rows"));
+    var column=parseInt(prompt("enter column"));;
+    document.write("<table border='1' align='center' width='50%'>");
+    num=1;
+    for(var i=0;i<rows;i++){
+        document.write("<tr>");
+        for(var j=0;j<column;j++){
+            
+                if(num%3==0){
+                    document.write(`<td bgcolor='yellow' align='center'> ${num}</td>`)
+                }
+                else{
+                document.write(`<td align='center'> ${num}</td>`)
+                }
+                num++;
+            }
+        document.write("</tr>");
+    }
+    document.write("</table>")
+
+</script>
+</table>
+</body>
+</html>

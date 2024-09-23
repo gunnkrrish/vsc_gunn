@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--global vs local var-->
+    <!-- <script>
+        let x=5;
+        function a(){
+            let x=100;
+            b();
+    }
+    function b(){
+        let y=50;
+        let sum=x+y;
+        console.log("sum is : ",sum);
+    }
+    a();
+    </script> -->
+
+
+
+    <!--let : scope limited to that loop only but var scope is out of loop also-->
+
+    <!-- <script>
+    for(let x=1;x<=5;x++){
+        console.log("x is : ",x);
+    }
+    console.log("x outside is : ",x);
+</script> -->
+
+
+
+
+<!-- <script>
+    for(var x=1;x<=5;x++){
+        console.log("x is : ",x);
+    }
+    console.log("x outside is : ",x);
+</script> -->
+
+
+
+<!--const keyword : value that is read only, and we have to define side by side where declare if not will give error-->
+<!-- <script>
+    const a=10;
+    console.log(a)
+    
+
+    // const a;           will give error
+    // a=10;
+</script> -->
+
+
+
+
+
+<!--TYPECASTING : conversion from one datatype to another
+~ take input from user by using prompt  (promt method value ko string m convert krke store krta h)
+parseint se vo integer hi rkhta h
+-->
+<!-- <script>
+    var num1 = prompt("enter 1st number");
+    var num2 = prompt("enter 2 num");
+    sum= parseInt(num1)+ parseInt(num2)
+    console.log("sum is : ",sum)
+</script> -->
+
+<!-- <script>
+    var num1 = parseInt( prompt("enter 1st number"));
+    var num2 = parseInt( prompt("enter 2 num"));
+    sum= (num1)+ (num2)
+    console.log("sum is : ",sum)
+</script> -->
+
+
+<!--STRING TO FLOAT-->
+<!-- <script>
+    var num1 = parseFloat( prompt("enter 1st number"));
+    var num2 = parseFloat( prompt("enter 2 num"));
+    sum= (num1)+ (num2)
+    console.log("sum is : ",sum)
+</script> -->
+
+<!-- <script>
+    let num1 = 56;
+    let num2 = 12;
+    sum= String (num1)+ String (num2)
+    console.log("sum is : ",sum)
+    console.log("type of sum is : ",typeof sum)
+</script> -->
+
+
+</body>
+</html>

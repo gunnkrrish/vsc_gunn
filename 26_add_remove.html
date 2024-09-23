@@ -1,0 +1,34 @@
+<!-- books.push : add at end
+books.unshift : add at begin
+books.pop: remove at end
+books.shift : remove at begin 
+// in between insert-delete
+|| Array.splice(start_index, deleteCount, [insert_item1 , insert_item2 , ...]);              //in this start_index and deleteCount is mandatory to write
+books.splice(1,3);    delete 3 elements from index 1
+books.splice(1,0,"a","b","c");  start from index 1  to delete nothing 0 then values to insert
+bools.splice(1,2,"book1","book2","book3"); to start from index 1 delete 2 elements and add book1,book2,bool3
+arr1=[1,2,2];
+arr2=[4,5,6];
+arr3=arr1.concat(arr2); 
+to check that it is array or not we use isArray() method
+to check if element presnt or not use includes() method
+reverse() method reverses the elements positions in the array so that last element goes into the first position
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        arr1 = ['abc','def','hello'];
+        console.log(arr1.includes('abc'));
+        arr1.reverse();
+        console.log(arr1);
+    </script>
+</body>
+</html>
+
+

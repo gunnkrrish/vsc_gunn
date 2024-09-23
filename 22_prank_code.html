@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">ARE YOU HUNGRY?</p>  
+    <button id="h1" onmouseover="col()">yes</button>
+    <button id="h2" onmouseover="v()">yes</button>
+<script>
+    document.getElementById("h2").style.visibility="hidden";
+    function col(){
+        document.getElementById("h1").style.visibility="hidden";
+        document.getElementById("h2").style.visibility="visible";
+    }
+
+    function v(){
+        document.getElementById("h1").style.visibility="visible";
+        document.getElementById("h2").style.visibility="hidden";
+    }
+    </script>
+    
+<br>
+</body>
+</html>

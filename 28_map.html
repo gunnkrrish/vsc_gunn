@@ -1,0 +1,34 @@
+<!-- map-create a new array with the result of a callback function called on each element in the original array.
+map() function takes an argument as callback function which is called for each element of an original array
+returns new array after applying the callback function on each element. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+    var myarray = [1,2,3,4,5];
+    var dbarray = myarray.map(double);
+    document.write(`${dbarray}`);
+
+    function double(n){
+        return n*2;
+    }
+</script> -->
+
+
+<script>
+    var myarray = "chitkara".split('');
+    var dbarray = myarray.map(concat);
+    document.write(`${dbarray}`);
+
+    function concat(n){
+        var str= n + '1';
+        return str;
+    }
+</script>
+</body>
+</html>

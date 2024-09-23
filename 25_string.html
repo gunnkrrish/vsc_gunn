@@ -1,0 +1,70 @@
+<!-- string type var chaiye to use new string like var str = new String("java");     here String is constructor 
+METHODS OF STRING OBJECT:
+charAt(): returns char at given index;
+charCodeAt() : returns the ascii value of the character at the index;
+indexOf(): returns the index of the character if not found it returns -1
+toLowerCase() : converts to lower case. 
+toUperCase()
+replace(): source_string.replace(original_string , new_string);      first occurence will be changed
+replace() - all occurences 'g': all occurences of b in a string will be changed
+replace() - ignore case i: all occurences of b in a string will be changed with loer and upper case
+
+-->
+
+
+
+<!--replace-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const mystring = "bat ball";
+        let result = mystring.replace('b','c');
+        document.write(result);
+    </script>
+</body>
+</html> -->
+
+<!--replace - all occurences of g-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const mystring = "bat Ball";
+        const pattern = /b/g;
+        let result = mystring.replace(pattern,'c');
+        document.write(result);
+    </script>
+</body>
+</html> -->
+
+
+<!--replace - all occurences of g with i-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const mystring = "bat Ball";
+        const pattern = /b/gi;
+        let result = mystring.replace(pattern,'c');
+        document.write(result);
+    </script>
+</body>
+</html> -->
+
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table cellpadding="20" cellspacing="5px" bordercolor= "blue" border="2" width="50%">
+        <tr>
+            <th>Student_id</th>
+            <th>Student_name</th>
+            <th>Student_age</th>
+        </tr>
+        <tr>
+            <td rowspan="2">001</td>   <!--rowspan merge kr deta h-->
+            <td>Gunn</td>
+            <td>23</td>         <!--td*6-->
+        </tr>
+        <tr>
+            <!-- <td>002</td> -->
+            <td colspan="2">Keshav</td>
+            <!--<td>13</td>-->         <!--to copy down use select then alt+shift+down arrow-->
+        </tr>
+    </table>
+
+
+    <!--TASK 1-->
+    <br>
+    <table border="2" cellspacing="2" cellpadding="16" width="20%" bgcolor="darkcyan">
+        <tr>
+            <th>Student_id</th>
+            <th>Student_name</th>
+            <th>Gender</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>1234</td>
+            <td>Bill</td>
+            <td>Male</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>1235</td>
+            <td>John</td>
+            <td>Male</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>1236</td>
+            <td>Olivia</td>
+            <td>Female</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>1237</td>
+            <td>Mia</td>
+            <td>Female</td>
+            <td>19</td>
+        </tr>
+    </table>
+    <!--TASK 2-->
+    <br>
+    <table border="2" cellpadding="12">
+        <caption><i><b>Sales report</b></i></caption>
+        <tr>
+        <th colspan ="2" bgcolor="darkcyan">October</th>
+        <th colspan="2" bgcolor="darkcyan">November</th>
+    </tr>
+    <tr >
+        <td>Sales</td>
+        <td>Profit</td>
+        <td>Sales</td>
+        <td>Profit</td>
+    </tr>
+    <tr>
+        <td>Rs.200,00</td>
+        <td>Rs.50,00</td>
+        <td>Rs.300,00</td>
+        <td>Rs.70,00</td>    
+    </tr>
+    <tr>
+        <td colspan="4" bgcolor="grey" align="center">November was more productive </td>
+    </tr>
+    </table>
+<br>
+    <!--Task 3-->
+    <table border="2" cellpadding="10">
+    <caption><b>Student Marks</b></caption>
+    <tr>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Marks</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Alok kumar</td>
+        <td>Front-end</td>
+        <td>75</td>
+    </tr>
+    <tr>
+        <td>OS</td>
+        <td>60</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Deepak gupta</td>
+        <td>Front-end</td>
+        <td><mark>80</mark></td>
+    </tr>
+    <tr>
+        <td>OS</td>
+        <td>75</td>
+    </tr>
+</table>
+</body>
+</html>

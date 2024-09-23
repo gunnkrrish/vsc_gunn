@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="p1">THIS IS SAMPLE TEXT!</p>    
+<br>
+<button onclick="colr()">on click</button>
+<button onclick="col()">hide</button>
+<button onclick="v()">view</button>
+<script>
+    document.getElementById("p1").style.color="blue";
+    document.getElementById("p1").style.textShadow="blue";
+
+
+    //create button and on click change color
+    function colr(){
+        document.getElementById("p1").style.color="red";
+    }
+
+
+
+
+    //hide text on click
+    function col(){
+        document.getElementById("p1").style.display="none";
+    }
+
+    function v(){
+        document.getElementById("p1").style.display="block";
+    }
+</script>
+</body>
+</html>

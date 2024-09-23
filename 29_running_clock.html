@@ -1,0 +1,52 @@
+<!-- showClock is call-back function and 1000 is seconds  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <!-- <script>
+        var myclock = setInterval(showClock , 1000);
+        function showClock(){
+            var d=new Date();
+            myTime = d.toLocaleTimeString();
+            document.getElementById('h1').innerHTML = myTime;
+        }
+    </script>
+    <h1 id="h1"></h1><br>
+    <button onclick="clearInterval(myclock)">stop Clock</button>
+</script> -->
+
+
+
+<h1 id="h1"></h1><br>
+<button id="btn" onclick="Clock();">Stop Clock</button>
+
+<script>
+    var myClock = setInterval(showclock, 1000);
+    function showclock() {
+        var d = new Date();
+        document.getElementById('h1').innerHTML = d.toLocaleTimeString();
+    }
+    function Clock() {
+        if (myClock) {
+            clearInterval(myClock);
+            myClock = null;
+            document.getElementById('btn').innerHTML = "Start Clock";
+        } else {
+            myClock = setInterval(showclock, 1000);
+            document.getElementById('btn').innerHTML = "Stop Clock";
+        }
+   }
+</script>
+</body>
+</html>
+
+
+<!-- to check version of js use chrome://version -->
+
+
+  
+    

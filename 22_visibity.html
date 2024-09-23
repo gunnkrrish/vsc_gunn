@@ -1,0 +1,28 @@
+<!-- visiblity = hidden(hide)
+ visible m hide hoga to uska space nhi htega  pr display m space ht jati h
+visiblity= visible -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">THIS IS SAMPLE TEXT!</p>  
+    <p id="p2">THIS IS SAMPLE 2!</p>    
+<br>
+<button onclick="col()">hide</button>
+<button onclick="v()">view</button>
+<script>
+    //hide text on click
+    function col(){
+        document.getElementById("p1").style.visibility="hidden";
+    }
+
+    function v(){
+        document.getElementById("p1").style.visibility="visible";
+    }
+    </script>
+</body>
+</html>

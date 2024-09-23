@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline-flex;
+            border: 4px solid  black;
+            overflow: hidden;
+
+        }
+    </style>
+    <script>
+        let curscale = 0.5;
+        function zoomin(){
+            if(curscale>=3)
+            alert("you r fully zoomed");
+            else{
+                document.getElementById("img1").style.scale=curscale+1;
+                document.getElementById("img1").style.transition="0.5s";
+                curscale++;
+            }
+        }
+        function zoomout(){
+            if(curscale<3)
+            alert("you r fully reached");
+            else{
+                document.getElementById("img1").style.scale=curscale-0.5;
+                document.getElementById("img1").style.transition="0.5s";
+                curscale--;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <img id="img1" src="blackimage.jpg" height="150" width="150">
+    </div>
+    <br><br>
+    <button onclick="zoomin()">
+        zoom in
+    </button> &nbsp;
+    <button onclick="zoomout()">
+        zoom out
+    </button> &nbsp;
+
+</body>
+</html>

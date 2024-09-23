@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        document.write("<h1>hello</h1><br>")             /* to show on console screeen */
+        document.write("front end")              /* is double code m koi bhi tag lgao to vo execute hoga naki print hoga */
+    </script>
+    <script src="/16_ext.js" >
+        document.write("ok")   /* ese run ni hoga */
+    </script>                     <!--external file ko dalne ke liye-->
+</head>
+<body>
+    <script>
+        document.write("<h1>hello</h1><br>")             /* to show on console screeen */
+        document.write("front end")              /* is double code m koi bhi tag lgao to vo execute hoga naki print hoga */
+    </script>
+    <script>
+        // console.log("okieee")         
+        const person = {
+            name: "shiva",age: 20, city: "delhi"
+        };    
+        console.log(person)
+        console.table(person)
+        let x;                                  /* value will be undefined  */
+        let y=5;
+        console.log(x)
+        console.log(y)
+    </script>
+
+    <script>
+        /*swapping 2 var */
+        let a=2;
+        let b=3;
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        console.log("value of a is :",a)
+        console.log("value of b is :",b)
+    </script>
+</body>
+</html>

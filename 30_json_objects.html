@@ -1,0 +1,49 @@
+<!-- jb data over the network se chaiye ho and we need to display then we need json and private data is not shown
+json m value key value ki form m hogi
+JSON stands for javascript object notation. JSON is a text based data format that is used to store and transfer data
+the data stored in key/value pairs separated by a comma
+the key and values are written in double quotes separated by a colon(:)
+the JSON object is written inside curly braces{}
+JSON array is written inside square brackets[] -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //JSON ARRAY
+        let person = [
+            {"name": "ram","age": 27},
+            {"name": "amit","age": 25},
+            {"name": "kavita","age": 22}
+    ]
+    //JSON OBJECTS
+    let person1 = {
+            "name": "ram",
+            "age": 25,
+            "gender" : "male"
+    }
+    for(items in person1){
+        console.log(items,person1[items]);    //accessing json objects
+    }
+
+    //nested objects
+    const data = {
+            "name": "ram",
+            "age": 25,
+            "hobby" : {
+                "reading" : true,
+                "music":false
+            },
+            "subjects": ["js","html","css"]
+    }
+    console.log(data.name);
+    console.log(data.hobby);
+    console.log(data.hobby.music);
+    console.log(data.subjects[1]);
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!--jb ans m single value chaiyee ho to use reduce
+ye ek sath 2 value uthata h first fir agli baar pichla result uthayega fr agla
+reduce() method is used to reduce an array to a single value
+it takes two arguments,the callback function and the accumulator
+returns a single value
+
+diff between map,filter and reduce
+map,filter ek ek value uthate hai but reduce phle hi do value uthata hai-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var myarray = [1,2,3,4,5];
+    // here 0 is accumalator that adds at end
+    var sum = myarray.reduce(add,0);
+    document.write(`${sum}`);
+
+    function add(n,cur){
+        return n+cur;
+    }
+</script>
+</body>
+</html>
