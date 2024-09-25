@@ -83,7 +83,7 @@ const prompt = require('prompt-sync')();
 const name1 = prompt('enter number : ');
 var writeStream = fs.createWriteStream("writesample.txt");
 for(var i=1;i<=10;i++){  
-  writeStream.write(q`${name1}* ${i} = ${i*name1}\n`);
+  writeStream.write(`${name1}* ${i} = ${i*name1}\n`);
     
 }
 writeStream.end();
