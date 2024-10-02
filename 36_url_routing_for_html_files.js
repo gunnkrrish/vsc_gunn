@@ -40,4 +40,4 @@ about.html
     <a href= "/contact">contact </a>
     <br>
     <h1>this is <u> about</u> page! </h1>
-</body>
+</body> */
